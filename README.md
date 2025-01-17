@@ -9,10 +9,11 @@ Este proyecto está diseñado para ilustrar varias funcionalidades comunes en Fl
 3. **Font Example**: Ejemplo de cómo integrar una fuente personalizada en Flutter.
 4. **TabBar Demo**: Muestra un `TabBar` con tres pestañas, cada una con un ícono representando diferentes medios de transporte.
 5. **Web Image**: Muestra una imagen descargada desde la web.
+6. 
 
 ## Rutas
 
-El proyecto utiliza rutas nombradas para navegar entre las pantallas. Aquí están las rutas disponibles:
+El proyecto utiliza rutas nombradas para navegar entre las pantallas. Aquí están algunas de las rutas disponibles:
 
 - `/`: Pantalla principal donde se listan las funcionalidades disponibles.
 - `/drawer-demo`: Muestra un ejemplo de un `Drawer` con navegación.
