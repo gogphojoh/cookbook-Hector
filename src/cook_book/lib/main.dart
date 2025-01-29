@@ -15,7 +15,7 @@ import 'custom_font.dart';
 import 'text_background.dart';
 import 'tabs.dart';
 
-//Effects exercises (pending)
+//Effects exercises (done)
 import 'download_button.dart';
 import 'nested.dart';
 import 'scrolling.dart';
@@ -54,6 +54,11 @@ import 'arguments.dart';
 import 'data_screen.dart';
 import 'sent_screen.dart';
 
+//Networking exercises (pending)
+import 'fetch.dart';
+
+
+
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -88,6 +93,8 @@ class MainMenu extends StatelessWidget {
       'Lists',
       'Forms',
       'Navigation',
+      'Networking',
+      'Persistence',
     ];
 
     final exercises = {
@@ -146,6 +153,20 @@ class MainMenu extends StatelessWidget {
         'Set up universal links for iOS',
         'Return data from a screen',
         'Send data to a new screen',
+      ],
+      'Networking':[
+        'Fetch data from the internet',
+        'Make authenticated requests',
+        'Send data to the internet',
+        'Update data over the internet',
+        'Delete data on the internet',
+        'Communicate with WebSockets',
+        'Parse JSON in the background',
+      ],
+      'Persistence': [
+        'Persist data with SQLite',
+        'Read and write files',
+        'Store key-value data on disk',
       ],
     };
 
@@ -295,6 +316,8 @@ Widget getExerciseWidget(String category, String exercise) {
           ),
         ),
       );
+    case 'Networking-Fetch data from the internet':
+      return const FetchDataScreen();
     default:
       return Center(
         child: Text(
